@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    color: yellow
+}
+
+p {
+    font-family: "Arial Black"
+}
+
+.atention {
+    color: red;
+    font-style: italic
+}
+
+#bigtext {
+    font-size: xx-large;
+}
