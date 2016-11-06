@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script</title>
+	<script src="ext-core-3.1.0/ext-core-debug.js"></script>
+	<style>
+		.red {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+<script>
+	function printDate() {
+		var date = new Date();
+		document.writeln(date.getDay() + "." + date.getMonth() + "." + date.getFullYear());
+//		document.appendChild("\n");
+		document.writeln(date);
+	}
+	var f = printDate;
+	f();
+</script>
+<hr>
+<script>
+	var array = [1, 2, 3, 4, 5];
+	for (var i = 0; i < array.length; i++) {
+		document.writeln(array[i] + "/");
+	}
+	document.writeln(array);
+	var hash = [];
+	hash["AUDIO"] = "t_audio.htm";
+	hash["IMG"] = "t_img.htm";
+	hash["TITLE"] = "t_title.htm";
+	document.writeln(hash);
+	document.writeln(hash["AUDIO"]);
+	var s = "JavaScript";
+	document.writeln("<hr>");
+	document.writeln(s.length);
+	document.writeln("<hr>");
+	document.writeln(s.big());
+	document.writeln("<hr>");
+	document.writeln(s.substr(1, 2));
+	document.writeln("<hr>");
+	document.writeln(Ext.lib.Dom.getDocumentWidth());
+	document.writeln("<hr>");
+	document.writeln(Ext.lib.Dom.getDocumentHeight());
+	document.writeln("<hr>");
+	document.writeln(Ext.lib.Dom.getViewportWidth());
+	document.writeln("<hr>");
+	document.writeln(Ext.lib.Dom.getViewportHeight());
+<!--</script>-->
+<!--<p onclick="click()">Click</p>-->
+<!--<script>-->
+	<!--function click() {-->
+<!--//		Ext.getBody().child("hr:first").setColor("#00ff00");-->
+<!--//		document.writeln("<hr>");-->
+		<!--alert("sdfasf");-->
+
+	<!--}-->
+
+<!--</script>-->
+<p>This example demonstrates how to assign an "onclick" event to a p element.</p>
+
+<button id="demo" onclick="myFunction()">Click me.</button>
+
+<script>
+	function myFunction() {
+		Ext.fly("demo").toggleClass("red");
+//		document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+
+	}
+</script>
+</body>
+</html>

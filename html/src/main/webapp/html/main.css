@@ -30,7 +30,24 @@ h3 {
 
 table {
     font-size: 10pt;
+    border: 2px solid black;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+td, th {
     border: thin solid black;
+    padding: 0px 5px;
+}
+
+tr:nth-child(odd) {
+    background-color: skyblue;
+}
+
+thead {
+    background-color: #cdd9db !important;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 blockquote,address {
@@ -46,9 +63,6 @@ h1,h2,h6,blockquote {
     text-align: left;
 }
 
-/*ul {*/
-/*list-style-type: circle;*/
-/*}*/
 nav {
     font-family: Arial, sans-serif;
     font-size: 14pt;
@@ -59,13 +73,13 @@ nav {
 
 nav ul {
     list-style-type: none;
-
 }
 
 nav li {
     padding: 5px 10px;
     margin: 10px 0;
     border: thin solid #b1bec6;
+    cursor: pointer
 }
 
 nav li ul {
@@ -75,12 +89,16 @@ nav li ul {
 
 nav ul li ul li {
     font-size: 12pt;
-    margin: 0;
-    padding: 0;
-    border: none;
+    padding: 2px;
+    margin: 0px 0px;
+    border: thin solid #F8F8F8;
+    cursor: pointer
 
 }
 
+.hovered {
+    border-color: #3B4043 !important
+}
 
 header, section, nav, footer {
     display: block;
@@ -109,4 +127,37 @@ footer {
     margin-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+a {
+    color: #576C8C;
+    text-decoration: none;
+}
+
+/*a:visited, a:link {*/
+/*color: #A1AFBA;*/
+/*text-decoration: none;*/
+/*}*/
+/**/
+/*a:visited,*/
+/*a:focus*/
+/*a:active */
+/*{*/
+/*color: #576C8C;*/
+/*text-decoration: underline;*/
+/*}*/
+
+nav A:link, nav A:visited {
+    color: #576C8C;
+    text-decoration: none
+}
+
+nav A:focus, nav A:hover, nav A:active {
+    color: #576C8C;
+    text-decoration: underline
+}
+
+section p:first-child:first-letter {
+    font-size: 18pt;
+    font-weight: bold;
 }
